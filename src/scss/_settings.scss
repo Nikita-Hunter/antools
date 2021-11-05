@@ -52,8 +52,13 @@ a {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1244px;
+  width: 100%;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+main
+{
+  width: 100%;
 }
