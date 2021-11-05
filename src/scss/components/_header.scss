@@ -1,0 +1,120 @@
+.header
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 31px 0;
+    &__container
+    {
+        .header__row
+        {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header__col:nth-child(2)
+            {
+                .navbar
+                {
+                    .navbar__list
+                    {
+                        display: flex;
+                        align-items: center;
+                        .navbar__item
+                        {
+                            margin-right: 40px;
+                            &:nth-child(2)
+                            {
+                                position: relative;
+                                top: 0;
+                                left: 0;
+                                transition: all .2s linear;
+                                &:focus,&:hover 
+                                {
+                                    .navbar__link
+                                    {
+                                        color: var(--color-acent);
+                                        i
+                                        {
+                                            transform: rotate(-180deg);
+                                        }
+                                    }
+                                }
+                                .dropdown
+                                {
+                                    margin-top: 10px;
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0;
+                                    min-width: 200px;
+                                    padding: 14px 15px;
+
+                                    background-color: var(--color-acent);
+                                    &__item
+                                    {
+                                        word-wrap: 100%;
+                                        margin-bottom: 15px;
+                                        &:last-child
+                                        {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                    &__link
+                                    {
+                                        color: var(--color-white);
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            &:last-child
+                            {
+                                margin-right: 0;
+                            }
+                            .navbar__link
+                            {
+                                transition: all .2s linear;
+                                cursor: pointer;
+                                font-weight: 400;
+                                font-weight: 16px;
+                                text-align: center;
+                                color: var(--color-txt);
+                                &:hover
+                                {
+                                    color: var(--color-acent);
+                                }
+                                i
+                                {
+                                    margin-left: 8px;
+                                    vertical-align: middle;
+                                    transition: transform 170ms linear;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header__col:last-child
+            {
+                .logins-btn
+                {
+                    display: flex;
+                    align-items: center;
+                    &__login
+                    {
+                        color: var(--color-txt);
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-align: center;
+                        margin-right: 40px;
+                        transition: all .2s linear;
+                        &:hover
+                        {
+                            color: var(--color-acent);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
