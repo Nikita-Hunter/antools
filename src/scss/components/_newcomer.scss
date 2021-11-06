@@ -1,64 +1,76 @@
-.popular
+.newcomer
 {
     width: 100%;
-    overflow: hidden;
-    padding: 200px 0;
+    padding: 220px 0 200px 0;
     &__inner
     {
         width: 100%;
     }
-    &__headline
+    &__content
     {
         width: 100%;
         display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__col
+    {
+        width: 50%;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &:last-child
+        {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
     &__title
     {
         width: 100%;
-        margin-bottom: 25px;
-        h1
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        h2
         {
-            text-align: center;
+            text-align: left;
             font-weight: 400;
+            text-transform: capitalize;
             font-size: 48px;
             line-height: 130%;
             color: rgba(255, 255, 255, 0.9);
+
         }
     }
-    &__subtitle
+    &__param
     {
-        max-width: 427px;
-        margin: 0 auto;
         width: 100%;
-        margin-bottom: 90px;
-        h3
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 60px;
+        p
         {
             font-weight: 300;
+            text-align: left;
+            max-width: 427px;
             font-size: 18px;
             line-height: 30px;
-            text-align: center;
             color: rgba(255, 255, 255, 0.55);
         }
     }
-    &__content
-    {
-        width: 100%;
-    }
     &__grid
     {
-        width: 100%;
+        max-width: 600px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: minmax(294px, auto);
-        grid-gap: 25px;
-        margin-bottom: 100px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: minmax(284px, auto);
+        grid-gap: 24px;
     }
     &__card
     {
-        min-height: 294px;
+        min-height: 284px;
         width: 100%;
         overflow: hidden;
         border-radius: 15px;
@@ -74,7 +86,7 @@
             backdrop-filter: blur(50px);
             transform: translateY(-20px);
             border: 1px solid rgba(255, 255, 255, 0.021);
-            .popular__card--icon
+            .newcomer__card--icon
             {
                 
                 a:first-child
@@ -87,12 +99,12 @@
                     }
                 }
             }
-            .popular__card--btn
+            .newcomer__card--btn
             {
                 background-color: var(--color-acent);
                 color: #fff;
             }
-            .popular__card--titles
+            .newcomer__card--titles
             {
                 h4
                 {
@@ -204,10 +216,5 @@
             transition: all .5s linear;
         }
     }
-    &__more
-    {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+
 }
