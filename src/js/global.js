@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
     itemHover.addEventListener('mouseleave', function () {
         dropDown.classList.remove('dropdown-show')
     })
-})
+});

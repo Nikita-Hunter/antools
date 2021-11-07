@@ -1,0 +1,187 @@
+.carousel
+{
+    width: 100%;
+    &__inner
+    {
+        width: 100%;
+    }
+    &__slide
+    {
+        width: 100%;
+        padding: 0 187px 0 187px;
+        position: relative;
+    }
+    &__item
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .profile
+        {
+            position: relative;
+            max-width: 399px;
+            width: 399px;
+            height: 492px;
+            &::after
+            {
+                content: '';
+                display: block;
+                top: 50%;
+                transform: translate(0,-50%);
+                z-index: -1;
+                left: 0;
+                position: absolute;
+                background-image: url('../img/circle.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 380px;
+                width: 380px;
+            }
+            &__img
+            {
+                max-width: 399px;
+                width: 399px;
+                height: 100%;
+                position: relative;
+                display: block;
+            }
+            &__title
+            {
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+                display: block;
+                padding: 16px 22px;
+                overflow: hidden;
+                border-radius: 8px;
+                background: rgba(40, 48, 54, 0.2);
+                backdrop-filter: blur(25px);
+                -moz-backdrop-filter: blur(25px);
+                -webkit-backdrop-filter: blur(25px);
+                -o-backdrop-filter: blur(25px);
+                h2
+                {
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 39px;
+                    text-transform: capitalize;
+                    letter-spacing: 0.015em;
+                    color: rgba(255, 253, 253, 0.78);
+                    margin-bottom: 2px;
+                }
+                h4
+                {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: rgba(255, 253, 253, 0.55);
+                    font-weight: 300;
+                    text-align: left;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .feedback
+        {
+            position: relative;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0.015em;
+            color: rgba(255, 255, 255, 0.78);
+            font-weight: 300;
+            text-align: left;
+            max-width: 393px;
+            margin-left: 57px;
+            &::after
+            {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -30%;
+                left: -18%;
+                transform: translate(18%,30%);
+                background: url('../img/for-feedback.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 0 0;
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}
+.nextt
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+    &:hover
+    {
+        i
+        {
+            color: var(--color-acent);
+        }
+    }
+    i
+    {
+        font-size: 40px;
+        transition: all .2s linear;
+    }
+}
+.prevv
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+    &:hover
+    {
+        i
+        {
+            color: var(--color-acent);
+        }
+    }
+    i
+    {
+        font-size: 40px;
+        transition: all .2s linear;
+    }
+}
+.owl-dots
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .owl-dot
+    {
+        width: 44px !important;
+        height: 6px !important;
+        border-radius: 4px !important;
+        background-color: rgba(40, 48, 54, 1) !important;
+        margin-right: 16px !important;
+        transition: all 400ms linear;
+        &:last-child
+        {
+            margin-right: 0 !important;
+        }
+    }
+}
+.owl-dot.active
+{
+    background-color: var(--color-acent) !important;
+    transition: all 400ms linear;
+}
