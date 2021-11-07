@@ -1,29 +1,22 @@
-.hero
+.subscribe
 {
     width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    padding: 250px 0;
     overflow: hidden;
     &__inner
     {
         width: 100%;
-    }
-    &__content
-    {
-        max-width: 600px;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &__title
     {
         width: 100%;
         display: flex;
-        justify-content: flex-start;
-        margin-bottom: 30px;
+        justify-content: center;
+        margin-bottom: 25px;
         h1
         {
             color: rgba(255, 255, 255, 0.9);
@@ -36,16 +29,17 @@
     &__subtitle
     {
         width: 100%;
+        max-width: 427px;
         display: flex;
-        justify-content: start;
-        margin-bottom: 60px;
+        justify-content: center;
+        margin-bottom: 100px;
         h3
         {
             font-size: 18px;
             line-height: 30px;
             font-weight: 300;
             color: rgba(255, 255, 255, 0.418);
-            text-align: left;
+            text-align: center;
         }
     }
     &__form
@@ -91,33 +85,9 @@
             font-weight: 300;
             width: 100%;
         }
-    }
-    .social-list
-    {
-        display: flex;
-        align-items: center;
-        &__item
+        &--btn
         {
-            margin-right: 8px;
-            &:last-child
-            {
-                margin-right: 0;
-            }
-        }
-        &__link
-        {
-            width: 58px;
-            height: 58px;
-            border-radius: 15px;
-            background-color: transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all .4s ease-in-out;
-            &:hover
-            {
-                background-color: var(--color-acent);
-            }
+            min-width: 130.43px;
         }
     }
 }
