@@ -2,6 +2,9 @@
 {
     width: 100%;
     padding: 250px 0;
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        padding: 100px 0;
+    }
     overflow: hidden;
     &__inner
     {
@@ -17,6 +20,12 @@
         display: flex;
         justify-content: center;
         margin-bottom: 25px;
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            h1
+            {
+                font-size: 30px !important;
+            }
+        }
         h1
         {
             color: rgba(255, 255, 255, 0.9);
@@ -33,6 +42,10 @@
         display: flex;
         justify-content: center;
         margin-bottom: 100px;
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            margin-bottom: 50px;
+            max-width: 100%;
+        }
         h3
         {
             font-size: 18px;
@@ -55,6 +68,9 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 132px;
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: 100%;
+        }
         &--content
         {
             width: 100%;

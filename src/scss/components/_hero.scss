@@ -9,6 +9,60 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .hero__inner
+        {
+            .hero__content
+            {
+                .hero__title
+                {
+                    width: 100%;
+                    h1
+                    {
+                        font-size: 30px;
+                    }
+                }
+                .hero__subtitle
+                {
+                    h3
+                    {
+                        font-size: 18px;
+                    }
+                }
+                .hero__form
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1000px) {
+        .hero__inner
+        {
+            .hero__content
+            {
+                .hero__title
+                {
+                    width: 100%;
+                    h1
+                    {
+                        font-size: 30px;
+                    }
+                }
+                .hero__subtitle
+                {
+                    h3
+                    {
+                        font-size: 18px;
+                    }
+                }
+                .hero__form
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
     &__inner
     {
         width: 100%;

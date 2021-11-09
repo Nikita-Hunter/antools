@@ -13,6 +13,55 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            flex-direction: column;
+            .newcomer__col
+            {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            .newcomer__title
+            {
+                width: 100%;
+                h2
+                {
+                    font-size: 30px;
+                }
+            }
+            .newcomer__param
+            {
+                width: 100%;
+                p
+                {
+                    font-size: 18px;
+                }
+            }
+        }
+        @media screen and (max-width:1000px)
+        {
+            flex-direction: column;
+            .newcomer__col
+            {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            .newcomer__title
+            {
+                width: 100%;
+                h2
+                {
+                    font-size: 30px;
+                }
+            }
+            .newcomer__param
+            {
+                width: 100%;
+                p
+                {
+                    font-size: 18px;
+                }
+            }
+        }
     }
     &__col
     {
@@ -26,6 +75,22 @@
             width: 50%;
             display: flex;
             justify-content: flex-end;
+            @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+                width: 100%;
+                .newcomer__grid
+                {
+                    display: grid;
+                    grid-template-columns: unset;
+                }
+                .newcomer__card
+                {
+                    width: 100%;
+                    background: rgba(40, 48, 54, 0.6);
+                }
+            }
+            @media screen and(max-width:700px){
+                width: 100%;
+            }
         }
     }
     &__title
@@ -68,6 +133,12 @@
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: minmax(284px, auto);
         grid-gap: 24px;
+        @media screen and (max-width:1000px)
+        {
+            grid-template-columns: unset;
+            max-width: 100%;
+            width: 100%;
+        }
     }
     &__card
     {
@@ -79,6 +150,12 @@
         background-color: transparent;
         border: 1px solid  transparent;
         transition: all .2s linear;
+        @media screen and (max-width:1000px)
+        {
+            background: rgba(40, 48, 54, 0.6);
+            margin-bottom: 25px;
+            width: 100%;
+        }
         &:hover
         {
             background: rgba(40, 48, 54, 0.6);
